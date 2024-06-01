@@ -43,6 +43,7 @@
         animation-fill-mode: both;
     }
 
+    .left-panel.show,
     .left-panel:hover {
         width: 300px;
         animation-name: panel-spia;
@@ -80,6 +81,19 @@
         height: 100vh;
         border: 0;
     }
+
+    button {
+        bottom: 0.3em;
+        left: 0.3em;
+        position: absolute;
+        border: 0;
+        background-color: cadetblue;
+        border-radius: 1em;
+        color: white;
+    }
+    button.show{
+        background-color: red;
+    }
 </style>
 
 <body>
@@ -92,6 +106,7 @@
             <h1>目录</h1>
         </div>
     </div>
+    <button onclick='this.classList.toggle("show");document.querySelector(".left-panel").classList.toggle("show");'>目录</button>
     <iframe src="a0/ccopo1.html" name="iframe_a"></iframe>
 </body>
 
