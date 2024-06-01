@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<header>
+    <meta charset='utf-8'>
+    <link href="css/dichuu.css" rel="stylesheet" type="text/css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Dichuu语教程</title>
+</header>
+<style>
+    body {
+        overflow: hidden;
+        margin: 0;
+    }
+
+    @keyframes panel-spie {
+        0% {
+            width: 300px;
+        }
+
+        100% {
+            width: 16px;
+        }
+    }
+
+
+    @keyframes panel-spia {
+        0% {
+            width: 16px;
+        }
+
+        100% {
+            width: 300px;
+        }
+    }
+
+    .left-panel {
+        position: fixed;
+        overflow: hidden;
+        width: 16px;
+        height: 100vh;
+        background-color: ghostwhite;
+        animation-name: panel-spie;
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+    }
+
+    .left-panel:hover {
+        width: 300px;
+        animation-name: panel-spia;
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+    }
+
+    .wrapper {
+        width: 300px;
+        padding: 16px;
+        overflow-y: scroll;
+    }
+
+    .left-panel a {
+        text-decoration: none;
+        display: block;
+        margin-right: 4em;
+        margin-left: 0.2em;
+        color: black;
+    }
+
+    .left-panel b {
+        margin-top: 0.6em;
+        display: block;
+    }
+
+    .left-panel a:hover,
+    .left-panel a.high-lighted {
+        color: white;
+        background-color: gray;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100vh;
+        border: 0;
+    }
+</style>
+
+<body>
+    <script src="js/ccopo.js"></script>
+    <script>
+
+    </script>
+    <div class="left-panel">
+        <div class="wrapper">
+            <h1>目录</h1>
+        </div>
+    </div>
+    <iframe src="a0/ccopo1.html" name="iframe_a"></iframe>
+</body>
+
+</html>

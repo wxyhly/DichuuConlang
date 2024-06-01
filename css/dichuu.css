@@ -1,0 +1,225 @@
+/* dichuu font */
+
+@font-face {
+    font-family: 'NewDichuu';
+    src: url('NewDichuu.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TimesNeufate';
+    src: url('TimesNeufate.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DichuuHand';
+    src: url('DichuuHand.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        margin-left: 6em;
+        margin-right: 6em;
+    }
+}
+
+body,
+input,.left-panel a
+.dichuu-sans-serif {
+    font-family: "NewDichuu", Arial, Helvetica, sans-serif;
+    white-space: normal;
+}
+
+.dichuu-hand {
+    font-family: "DichuuHand", Arial, Helvetica, sans-serif !important;
+    white-space: normal;
+}
+
+.ipa {
+    color: darkgreen;
+}
+
+.dichuu-serif,
+.ipa {
+    font-family: "TimesNeufate", 'Times New Roman', Times, serif !important;
+    white-space: normal;
+}
+
+/* lesson style */
+
+table {
+    border-top: 2px solid rgb(160 160 160);
+    border-bottom: 2px solid rgb(160 160 160);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-collapse: collapse;
+}
+
+thead {
+    border-bottom: 2px solid rgb(160 160 160);
+    font-weight: bold;
+}
+
+tr {
+    border-bottom: 1px solid rgb(220 218 216);
+}
+
+tr:hover {
+    background-color: beige;
+}
+
+td {
+    padding-left: 1em;
+}
+
+div.kune {
+    border: dashed;
+    border-radius: 0.2em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+div.choice-container {
+    display: grid;
+    grid-template-areas: 'x y y y y';
+}
+
+.choice-option {
+    grid-area: y;
+    border-radius: 0.1em;
+    border: solid rgb(220 218 216);
+    width: 100px;
+    cursor: pointer;
+}
+
+div[data-input],
+.choice-option:hover {
+    background-color: azure;
+}
+
+.error {
+    border: solid red;
+    color: red;
+}
+
+.correct {
+    border: solid green;
+    color: green;
+}
+
+.choice-item-wrapper {
+    grid-area: x;
+}
+
+.choice-item {
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 0.1em;
+    border: solid rgb(220 218 216);
+    font-size: 3em;
+    width: 3em;
+    margin: 0.2em;
+    padding: 0.2em;
+    align-content: center;
+    text-align: center;
+}
+
+div.word-container {
+    display: grid;
+    grid-template-columns: 20% 30% 20% 30%;
+    align-items: baseline;
+    background-color: aliceblue;
+}
+
+div.sentence-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: baseline;
+    background-color: aliceblue;
+}
+
+.word-item,
+.sentence-item {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    padding-right: 0.5em;
+    font-size: 1.2em;
+}
+
+.noruby ruby rt {
+    display: none;
+}
+
+.sentence-item:nth-child(4n+1),
+.sentence-item:nth-child(4n+2),
+.word-item:nth-child(8n+1),
+.word-item:nth-child(8n+3),
+.word-item:nth-child(8n+2),
+.word-item:nth-child(8n+4) {
+    color: darkblue;
+}
+
+.sentence-item:nth-child(4n+3),
+.sentence-item:nth-child(4n),
+.word-item:nth-child(8n+5),
+.word-item:nth-child(8n+7),
+.word-item:nth-child(8n+6),
+.word-item:nth-child(8n) {
+    color: darkred;
+}
+
+.select-container>div {
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 0.1em;
+    border: solid rgb(220 218 216);
+    font-size: 1.2em;
+    margin: 0.4em;
+    padding: 0.2em;
+}
+
+.select-container label {
+    display: block;
+}
+
+.alphabet {
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 0.1em;
+    border: solid rgb(220 218 216);
+    font-size: 1.6em;
+    margin: 0.4em;
+    padding: 0.2em;
+    width: 2.5em;
+    text-align: center;
+}
+.dichuu-input-btn {
+    border: solid rgb(200, 200, 244);
+    background-color: rgb(244, 244, 255);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
+
+button.page {
+    background-color: rgb(224, 93, 93);
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5em;
+    border: 0;
+    cursor: pointer;
+    margin: 1em;
+}
+
+button.page:hover {
+    background-color: rgb(230, 161, 101);
+}
